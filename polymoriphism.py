@@ -1,6 +1,6 @@
 #polymoriphism
 #operator overloading
-a=2;b=5
+'''a=2;b=5
 print(a+b) #7
 print(a.__add__(b)) #7
 print(a.__add__(6)) #8
@@ -34,3 +34,60 @@ class B:
         self.b=b
 x=A(5);y=B(10)
 print(x+y) #50
+
+#method overloading
+class new():
+    def sum(self,a=None,b=None,c=None):
+        if a!=None and b!=None and c!=None:
+            print(" the sum is ",a+b+c)
+        elif a!=None and b!=None:
+            print(" mul",a*b)
+        else:
+            print("program ends................")
+a=new()
+a.sum()
+a.sum(1,4,6)
+a.sum(4,7)'''
+
+'''class new():
+    def sum(self,a=int(input("")),b=int(input("")),c=None):
+        if a!=None and b!=None and c!=None:
+            print(" the sum is ",a+b+c)
+        elif a!=None and b!=None:
+            print(" mul",a*b)
+        else:
+            print("program ends................")
+a=new()
+a.sum()'''
+
+
+#method over riding
+'''class animal():
+    def speack(self):
+        print("animals will be friendly")
+class dog():
+    def speack(self):
+        print("dog wil bark")
+a=animal()
+b=dog()
+a.speack()
+b.speack()'''
+
+class vehical():
+    def pollution(self):
+        print(" it will produce more")
+class scooty():
+    def pollution(self):
+        print("it will produce less")
+class bike():
+    def pollution(self):
+        print("it will more")
+a=vehical()
+b=scooty()
+c=bike()
+a.pollution()
+b.pollution()
+c.pollution()
+
+
+
