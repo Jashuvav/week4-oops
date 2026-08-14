@@ -5,6 +5,7 @@
     def avl_cash(jash):
         print("avalible cash is",jash.cash)
         print(" avaliable cash is ",RBI.cash)
+
 class SBI(RBI):
     pass
 class HDFC(RBI):
